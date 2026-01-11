@@ -11,11 +11,16 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap">
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
       background-color: #f5f3ef;
       color: #1a1a1a;
+      overflow-x: hidden; /* ✅ side issue fix */
     }
 
     header {
@@ -28,35 +33,38 @@
     header h1 {
       font-family: 'Playfair Display', serif;
       font-size: 42px;
-      margin-bottom: 10px;
+      margin: 0 0 10px;
     }
 
     header p {
       font-size: 16px;
       opacity: 0.95;
+      margin: 0;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 850px;        /* ✅ Apple-style width */
       margin: auto;
-      padding: 60px 20px;
+      padding: 60px 24px;      /* ✅ proper side spacing */
     }
 
     h2 {
       font-family: 'Playfair Display', serif;
       font-size: 26px;
       margin-top: 40px;
+      margin-bottom: 12px;
       color: #7b0f1d;
     }
 
     p, li {
       font-size: 15.5px;
-      line-height: 1.8;
+      line-height: 1.9;        /* ✅ better readability */
       color: #333;
     }
 
     ul {
-      padding-left: 20px;
+      padding-left: 18px;
+      margin-top: 10px;
     }
 
     footer {
@@ -67,7 +75,7 @@
       font-size: 14px;
     }
 
-    a {
+    footer a {
       color: #c9a16b;
       text-decoration: none;
       font-weight: 500;
@@ -172,7 +180,8 @@
 </div>
 
 <footer>
-  © 2026 Rent Your Buddy • All Rights Reserved
+  © 2026 Rent Your Buddy • All Rights Reserved <br>
+  <a href="index.html">← Back to Home</a>
 </footer>
 
 </body>
