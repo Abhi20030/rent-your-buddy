@@ -3,69 +3,132 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>Rent Your Buddy – Premium Companion Service | ₹999/hour</title>
+  <title>Rent Your Buddy – Luxury Companion Service | ₹999/hour</title>
 
-  <meta name="description" content="Rent Your Buddy is a premium companion service. Hire a classy buddy or boyfriend for conversations, outings and emotional support. ₹1000 per hour. Book instantly on WhatsApp." />
+  <meta name="description" content="Rent Your Buddy is a luxury companion service. Hire a classy buddy for conversations, outings and emotional support. ₹999 per hour. Book instantly on WhatsApp." />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Google Site Verification -->
   <meta name="google-site-verification" content="uFONHVETC0_E1BkG_rZtAYPrEzujSB2ugv7iZy_Tf4" />
 
-  <!-- Apple-style Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Premium Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap">
 
   <style>
-    .profiles {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 32px;
-  margin-top: 50px;
-}
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0b0b0b;
+      color: #eaeaea;
+    }
 
-.profile {
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 24px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
-  text-align: center;
-}
+    header {
+      background: linear-gradient(180deg, #0b0b0b, #111);
+      text-align: center;
+      padding: 110px 20px;
+    }
 
-.profile img {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 14px;
-}
+    header h1 {
+      font-size: 46px;
+      font-weight: 600;
+      margin-bottom: 14px;
+      letter-spacing: -0.4px;
+      color: #d4af37;
+    }
 
-.profile h3 {
-  margin: 10px 0 4px;
-  font-size: 20px;
-  font-weight: 600;
-}
+    header p {
+      font-size: 18px;
+      color: #cfcfcf;
+      max-width: 640px;
+      margin: auto;
+      line-height: 1.6;
+    }
 
-.profile .role {
-  font-size: 14px;
-  color: #777;
-  margin-bottom: 12px;
-}
+    .price {
+      margin-top: 24px;
+      font-size: 20px;
+      font-weight: 500;
+      color: #f5c542;
+    }
 
-.profile p {
-  font-size: 15px;
-  color: #555;
-  line-height: 1.6;
-}
+    .btn {
+      display: inline-block;
+      margin-top: 42px;
+      padding: 15px 38px;
+      background: linear-gradient(135deg, #d4af37, #b8962e);
+      color: #000;
+      text-decoration: none;
+      border-radius: 999px;
+      font-weight: 600;
+      box-shadow: 0 12px 35px rgba(212,175,55,0.35);
+    }
 
-.profile .tag {
-  display: inline-block;
-  margin-top: 14px;
-  font-size: 13px;
-  padding: 6px 14px;
-  border-radius: 999px;
-  background: #f1f1f1;
-  color: #333;
-}
+    .btn:hover {
+      opacity: 0.9;
+    }
 
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 90px 20px;
+    }
+
+    .section {
+      margin-bottom: 90px;
+    }
+
+    .section h2 {
+      font-size: 34px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #d4af37;
+    }
+
+    .section p {
+      font-size: 17px;
+      color: #cfcfcf;
+      max-width: 760px;
+      line-height: 1.8;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #111;
+      border-radius: 20px;
+      padding: 34px;
+      border: 1px solid rgba(212,175,55,0.18);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 21px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #f5c542;
+    }
+
+    .card p {
+      color: #cfcfcf;
+      line-height: 1.6;
+      font-size: 15.5px;
+    }
+
+    footer {
+      background: #0b0b0b;
+      border-top: 1px solid rgba(212,175,55,0.25);
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 14px;
+      color: #999;
+    }
   </style>
 </head>
 
@@ -74,12 +137,12 @@
 <header>
   <h1>Rent Your Buddy</h1>
   <p>
-    A premium companion experience designed for comfort, respect and meaningful connection.
+    A luxury companion experience designed for comfort, respect and meaningful connection.
   </p>
 
   <div class="price">₹999 / hour • Minimum 2 hours</div>
 
-  <https://wa.me/918941072209?text=Hi%20I%20want%20to%20book%20a%20premium%20buddy%20at%20₹999%20per%20hour>
+  <a class="btn" href="https://wa.me/918941072209?text=Hi%20I%20want%20to%20book%20a%20luxury%20buddy%20at%20₹999%20per%20hour">
     Book via WhatsApp
   </a>
 </header>
@@ -91,7 +154,7 @@
     <p>
       Rent Your Buddy offers a clean, safe and premium companion service.
       Whether you want someone to talk to, spend time with, or simply feel heard,
-      our service focuses on trust, privacy and emotional ease.
+      our service focuses on privacy, trust and emotional ease.
     </p>
   </div>
 
@@ -100,18 +163,18 @@
 
     <div class="cards">
       <div class="card">
-        <h3>Premium Experience</h3>
-        <p>Carefully curated buddies who are respectful, friendly and emotionally aware.</p>
+        <h3>Luxury Experience</h3>
+        <p>Carefully curated buddies who are respectful, friendly and emotionally intelligent.</p>
       </div>
 
       <div class="card">
         <h3>Clear Pricing</h3>
-        <p>₹999 per hour with a minimum of 2 hours. No hidden costs.</p>
+        <p>₹999 per hour with a minimum of 2 hours. No hidden charges.</p>
       </div>
 
       <div class="card">
         <h3>Instant Booking</h3>
-        <p>Book directly through WhatsApp with quick and private communication.</p>
+        <p>Book directly through WhatsApp with fast and private communication.</p>
       </div>
     </div>
   </div>
@@ -119,7 +182,7 @@
 </div>
 
 <footer>
-  © 2026 Rent Your Buddy • Premium Companion Service
+  © 2026 Rent Your Buddy • Luxury Companion Service
 </footer>
 
 </body>
