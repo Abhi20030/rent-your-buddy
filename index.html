@@ -9,24 +9,44 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Verification -->
+  <!-- Google verification -->
   <meta name="google-site-verification" content="uFONHVETC0_E1BkG_rZtAYPrEzujSB2ugv7iZy_Tf4" />
 
-  <!-- Elegant Font -->
+  <!-- Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap">
 
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #f5f3ef; /* Soft Pearl */
+      background-color: #f5f3ef;
       color: #1a1a1a;
     }
 
+    /* 🔴 Background image (30% visible) */
+    .page-bg {
+      position: fixed;
+      inset: 0;
+      background-image: url("bg-red-luxury.jpg");
+      background-size: cover;
+      background-position: center;
+      opacity: 0.3;
+      z-index: -2;
+    }
+
+    /* Soft overlay for readability */
+    .page-overlay {
+      position: fixed;
+      inset: 0;
+      background: #f5f3ef;
+      opacity: 0.88;
+      z-index: -1;
+    }
+
     header {
-      background: #7b0f1d; /* Crimson Depth */
+      background: #7b0f1d;
       color: #ffffff;
-      padding: 110px 20px;
+      padding: 120px 20px;
       text-align: center;
     }
 
@@ -57,7 +77,7 @@
       display: inline-block;
       margin-top: 42px;
       padding: 14px 38px;
-      background: #c9a16b; /* Warm Sand */
+      background: #c9a16b;
       color: #1a1a1a;
       text-decoration: none;
       border-radius: 999px;
@@ -78,7 +98,7 @@
       font-family: 'Playfair Display', serif;
       font-size: 34px;
       margin-bottom: 16px;
-      color: #7b0f1d; /* Crimson */
+      color: #7b0f1d;
     }
 
     .section p {
@@ -96,7 +116,7 @@
     }
 
     .card {
-      background: #c9a16b; /* Warm Sand */
+      background: #c9a16b;
       border-radius: 22px;
       padding: 36px;
       box-shadow: 0 15px 40px rgba(0,0,0,0.15);
@@ -117,7 +137,7 @@
     }
 
     footer {
-      background: #111111; /* Obsidian Black */
+      background: #111111;
       color: #bbbbbb;
       text-align: center;
       padding: 40px 20px;
@@ -127,6 +147,10 @@
 </head>
 
 <body>
+
+<!-- Background layers -->
+<div class="page-bg"></div>
+<div class="page-overlay"></div>
 
 <header>
   <h1>Rent Your Buddy</h1>
