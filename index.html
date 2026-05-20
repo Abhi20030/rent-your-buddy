@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Google Verification -->
-<meta name="google-site-verification" content="xxxxxxxxxxxx" />
+<!-- GOOGLE VERIFICATION -->
+<meta name="google-site-verification" content="PASTE-YOUR-GOOGLE-CODE-HERE" />
+
 <title>Rent Your Buddy</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -20,7 +22,7 @@
 }
 
 body{
-    background: linear-gradient(135deg,#0f172a,#111827,#1e293b);
+    background:#0f172a;
     color:white;
     overflow-x:hidden;
 }
@@ -33,10 +35,10 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    backdrop-filter: blur(12px);
-    background:rgba(255,255,255,0.05);
     position:fixed;
     top:0;
+    background:rgba(0,0,0,0.5);
+    backdrop-filter:blur(10px);
     z-index:1000;
     border-bottom:1px solid rgba(255,255,255,0.1);
 }
@@ -47,46 +49,54 @@ nav{
     color:#00f5d4;
 }
 
-nav a{
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
     color:white;
     text-decoration:none;
-    margin-left:25px;
     transition:0.3s;
 }
 
-nav a:hover{
+nav ul li a:hover{
     color:#00f5d4;
 }
 
-/* HERO SECTION */
+/* HERO */
 
 .hero{
     min-height:100vh;
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
     text-align:center;
     padding:120px 8%;
+    background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
 }
 
 .hero-content{
-    max-width:800px;
+    max-width:850px;
 }
 
 .hero h1{
     font-size:65px;
-    line-height:1.1;
     margin-bottom:20px;
 }
 
-.hero h1 span{
+.hero span{
     color:#00f5d4;
 }
 
 .hero p{
     font-size:18px;
-    color:#cbd5e1;
     line-height:1.8;
+    color:#cbd5e1;
     margin-bottom:35px;
 }
 
@@ -95,8 +105,8 @@ nav a:hover{
     padding:15px 35px;
     background:#00f5d4;
     color:black;
-    border-radius:50px;
     text-decoration:none;
+    border-radius:50px;
     font-weight:600;
     transition:0.3s;
 }
@@ -106,17 +116,19 @@ nav a:hover{
     box-shadow:0 10px 25px rgba(0,245,212,0.4);
 }
 
-/* SERVICES */
+/* SECTION */
 
-.services{
+section{
     padding:80px 8%;
 }
 
 .section-title{
     text-align:center;
-    font-size:40px;
+    font-size:42px;
     margin-bottom:50px;
 }
+
+/* CARDS */
 
 .cards{
     display:grid;
@@ -126,10 +138,10 @@ nav a:hover{
 
 .card{
     background:rgba(255,255,255,0.05);
-    padding:35px;
+    border:1px solid rgba(255,255,255,0.1);
     border-radius:25px;
-    backdrop-filter:blur(12px);
-    border:1px solid rgba(255,255,255,0.08);
+    padding:30px;
+    backdrop-filter:blur(10px);
     transition:0.4s;
 }
 
@@ -141,7 +153,6 @@ nav a:hover{
 .card h3{
     margin-bottom:15px;
     color:#00f5d4;
-    font-size:24px;
 }
 
 .card p{
@@ -149,17 +160,21 @@ nav a:hover{
     line-height:1.7;
 }
 
-/* CTA */
+/* PROFILE */
 
-.cta{
-    padding:100px 8%;
-    text-align:center;
+.profile-img{
+    width:100%;
+    border-radius:20px;
+    margin-bottom:20px;
 }
+
+/* CTA */
 
 .cta-box{
     background:linear-gradient(135deg,#00f5d4,#06b6d4);
     padding:60px;
     border-radius:30px;
+    text-align:center;
     color:black;
 }
 
@@ -180,7 +195,6 @@ footer{
     padding:30px;
     border-top:1px solid rgba(255,255,255,0.1);
     color:#94a3b8;
-    margin-top:50px;
 }
 
 /* MOBILE */
@@ -195,15 +209,11 @@ nav{
     padding:18px 5%;
 }
 
-.hero{
-    padding:120px 5%;
+nav ul{
+    display:none;
 }
 
-.services{
-    padding:70px 5%;
-}
-
-.cta{
+section{
     padding:70px 5%;
 }
 
@@ -214,6 +224,7 @@ nav{
 }
 
 </style>
+
 </head>
 
 <body>
@@ -221,13 +232,16 @@ nav{
 <!-- NAVBAR -->
 
 <nav>
-    <div class="logo">Rent Your Buddy</div>
 
-    <div>
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </div>
+<div class="logo">Rent Your Buddy</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Profiles</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
 </nav>
 
 <!-- HERO -->
@@ -240,7 +254,7 @@ nav{
 
 <p>
 Friendly companionship services with comfort, trust, and professionalism.
-Book your buddy instantly and enjoy meaningful connections.
+Book trusted buddies instantly and enjoy meaningful experiences.
 </p>
 
 <a href="https://wa.me/918941072209" class="btn" target="_blank">
@@ -252,9 +266,35 @@ Book on WhatsApp
 </section>
 
 <!-- SERVICES -->
-    <!-- PROFILE SECTION -->
 
-<section class="services">
+<section>
+
+<h2 class="section-title">Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Hourly Companion</h3>
+<p>Professional and friendly companionship available on an hourly basis.</p>
+</div>
+
+<div class="card">
+<h3>Trusted Support</h3>
+<p>Safe and respectful interactions with verified buddies.</p>
+</div>
+
+<div class="card">
+<h3>Instant Booking</h3>
+<p>Book directly through WhatsApp with fast support.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PROFILE SECTION -->
+
+<section>
 
 <h2 class="section-title">Featured Buddies</h2>
 
@@ -264,14 +304,14 @@ Book on WhatsApp
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=500"
-style="width:100%; border-radius:20px; margin-bottom:20px;">
+<img class="profile-img"
+src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=500">
 
 <h3>Rahul Sharma</h3>
 
 <p>
-Age: 24 <br>
-Friendly • Travel Partner • Fun Conversations
+Age: 24<br>
+Travel Partner • Fun Conversations • Friendly Nature
 </p>
 
 <br>
@@ -286,13 +326,13 @@ Book Rahul
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=500"
-style="width:100%; border-radius:20px; margin-bottom:20px;">
+<img class="profile-img"
+src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=500">
 
 <h3>Priya Mehta</h3>
 
 <p>
-Age: 22 <br>
+Age: 22<br>
 Coffee Buddy • Events • Friendly Support
 </p>
 
@@ -308,13 +348,13 @@ Book Priya
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=500"
-style="width:100%; border-radius:20px; margin-bottom:20px;">
+<img class="profile-img"
+src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=500">
 
 <h3>Arjun Verma</h3>
 
 <p>
-Age: 26 <br>
+Age: 26<br>
 Gaming • Hangouts • Travel Companion
 </p>
 
@@ -330,34 +370,9 @@ Book Arjun
 
 </section>
 
-<section class="services">
-
-<h2 class="section-title">Our Services</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Hourly Companion</h3>
-<p>Professional and friendly companionship available on an hourly basis.</p>
-</div>
-
-<div class="card">
-<h3>Trusted Support</h3>
-<p>Safe, respectful, and verified interactions for better experiences.</p>
-</div>
-
-<div class="card">
-<h3>Instant Booking</h3>
-<p>Fast and easy booking directly through WhatsApp support.</p>
-</div>
-
-</div>
-
-</section>
-
 <!-- CTA -->
 
-<section class="cta">
+<section>
 
 <div class="cta-box">
 
@@ -378,7 +393,7 @@ Start Booking
 <!-- FOOTER -->
 
 <footer>
-© 2026 Rent Your Buddy | Designed Professionally
+© 2026 Rent Your Buddy | All Rights Reserved
 </footer>
 
 </body>
